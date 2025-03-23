@@ -25,6 +25,7 @@
                 <li><a href="platforms.html">Other Platforms</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="#contacts">Connect with Me</a></li>
+                <li><a href="" onclick="speakIntro()">🔊 Hear About Me</a></li>
             </ul>
         </div>
     </div>
@@ -123,6 +124,16 @@
     
         // Add a click event listener to the button
         document.getElementById('downloadResume').addEventListener('click', openResume);
+    </script>
+    <script>
+        function speakIntro() {
+            let msg = new SpeechSynthesisUtterance();
+            msg.text = "Hello! I am Aditya, I am a Computer Science Engineering student at the Sharad Institute of Technology, Ichalkaranji, Kolhapur. I have completed my internship in webDevelopment from Nuclear Power Corporation of India Limited, Mumbai. I have completed my schooling from Atomic Energy Central School, Tarapur. Currently, I am working on my skills in web development and competitive programming. I am a quick learner and a hardworking person. I am always ready to learn new things and take up new challenges.";
+            msg.lang = "en-US";
+            msg.rate = 1; // Adjust speed (0.5 to 2)
+            msg.pitch = 1; // Adjust pitch (0 to 2)
+            speechSynthesis.speak(msg);
+        }
     </script>
     
 </body>
