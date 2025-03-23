@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASP Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="nav-bar" id="home">
+        <div class="nav-left">Aditya's Portfolio</div>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <div class="nav-right">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="platforms.html">Other Platforms</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="#contacts">Connect with Me</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="first-section">
+        <div class="first-left">
+            Hii! My name is <span class="name">Aditya</span>
+            <div>and I am a passionate</div>
+            <span id="element"></span>
+            <span class="element"></span>
+
+            <div class="first-buttons">
+                <button id="downloadResume" class="btn">Download Resume</button>
+            </div>
+        </div>
+
+        <div class="first-right">
+            <img src="images/adi.png" alt="...">
+        </div>
+    </div>
+
+    <hr class="hr-custom">
+    
+
+    <div class="about" id="about">
+        <div id="h1">About Me</div>
+        <p>
+            I am a Computer Science Engineering student at the Sharad Institute of Technology, Ichalkaranji, Kolhapur. I have completed my internship in webDevelopment from Nuclear Power Corporation of India Limited, Mumbai. I have completed my schooling from Atomic Energy Central School, Tarapur. Currently, I am working on my skills in web development and competitive programming. I am a quick learner and a hardworking person. I am always ready to learn new things and take up new challenges.
+        </p>
+        
+
+    </div>
+
+    <hr class="hr-custom">
+
+    <div class="footer">
+        <div class="row">
+            <div class="contact-details" id="contacts">
+                <p id="contact">Contact Details </p>
+                <p>Email : adityashinde2129@gmail.com 
+                    <br>Phone : 8830801471
+                    <br>Address : Sangli, Maharashtra
+                </p>
+            </div>
+            <div class="other-links">
+              <h5>Section</h5>
+              <ul class="nav-buttom">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="platforms.html">Other Platforms</a></li>
+                <li><a href="#contacts">Connect with Me</a></li>
+              </ul>
+            </div>
+      
+            <div class="viewer">
+                <form action="https://formsubmit.co/adityashinde2129@gmail.com" method="POST">
+                    <p>Any Message for Aditya!</p>
+                    <label for="feedback" class="feedback">Your message:</label>
+                    <input id="feedback" type="text" name="message" class="text-box" placeholder="Your message" required>
+                    <input type="hidden" name="_next" value="https://yourwebsite.com/thankyou.html">
+                    <input type="hidden" name="_captcha" value="false">
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </form>
+                
+            </div>
+          </div>
+    </div>
+
+
+    <hr class="hr-end">
+
+
+
+
+
+    <script>
+        function toggleMenu() {
+            let menu = document.querySelector(".nav-right ul");
+            menu.classList.toggle("show");
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Coder', 'Web Designer', 'CSE Student'],
+            typeSpeed: 50,
+            showCursor: false,
+        });
+    </script>
+    <script>
+        // JavaScript function to open the PDF file
+        function openResume() {
+            window.open('Aditya_Shinde_Resume.pdf', '_blank');
+        }
+    
+        // Add a click event listener to the button
+        document.getElementById('downloadResume').addEventListener('click', openResume);
+    </script>
+    
+</body>
+
+
+</html>

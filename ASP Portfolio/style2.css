@@ -1,0 +1,96 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    overflow: hidden;
+    background-color: rgb(2, 2, 37); /* Dark Mode Background */
+    color: white; /* Dark Mode Text */
+    overflow: auto;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light Mode */
+body.light-mode {
+    background-color: rgb(240, 240, 240);
+    color: black;
+}
+
+/* Navbar */
+.nav-bar {
+    display: flex;
+    background-color: rgb(20, 20, 52);
+    justify-content: space-around;
+    align-items: center;
+    height: 5rem;
+    border-radius: 15px;
+    margin: 1rem 2rem;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+body.light-mode .nav-bar {
+    background-color: rgb(200, 200, 200);
+}
+
+/* Navbar Text */
+.nav-left {
+    color: aliceblue;
+}
+
+body.light-mode .nav-left {
+    color: black;
+}
+
+/* Navbar Links */
+.nav-right ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+body.light-mode .nav-right ul li a {
+    color: black;
+}
+
+/* Sections */
+.first-section, .about, .row, .project, .profiles {
+    background-color: rgb(11, 11, 45);
+    border-radius: 2.5rem;
+    margin: 2rem;
+    transition: background-color 0.3s ease;
+}
+
+body.light-mode .first-section,
+body.light-mode .about,
+body.light-mode .row,
+body.light-mode .project,
+body.light-mode .profiles {
+    background-color: rgb(220, 220, 220);
+}
+
+/* Buttons */
+.first-left .btn, .viewer .btn, .project-info .project-buttons .btn, .profile-info .profile-buttons .btn {
+    background: rgb(25, 54, 122);
+    color: white;
+    border: 2px solid white;
+    border-radius: 1rem;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.light-mode .first-left .btn,
+body.light-mode .viewer .btn,
+body.light-mode .project-info .project-buttons .btn,
+body.light-mode .profile-info .profile-buttons .btn {
+    background: rgb(100, 149, 237);
+    color: black;
+}
+
+/* Footer */
+.contact-details {
+    color: rgb(180, 179, 179);
+}
+
+body.light-mode .contact-details {
+    color: black;
+}

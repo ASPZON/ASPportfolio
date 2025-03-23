@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platforms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav-bar" id="home">
+        <div class="nav-left">Aditya's Projects</div>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <div class="nav-right">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </div>
+    </div>
+    <hr class="hr-custom">
+    <div class="profile-list">
+        <div class="profiles">
+            <div class="profile-logos">
+                <img src="images/Linkedin-logo.webp" alt="LinkedIn">
+            </div>
+            <div class="profile-info">
+                <div class="profile-title">LinkedIn</div>
+                <div class="profile-buttons">
+                    <button class="btn profile-button" data-url="https://www.linkedin.com/in/adityashinde2129">View Profile</button>
+                </div>
+            </div>
+        </div>
+        <hr class="hr-custom">
+        <div class="profiles">
+            <div class="profile-logos">
+                <img src="images/Leetcode-logo.png" alt="LeetCode">
+            </div>
+            <div class="profile-info">
+                <div class="profile-title">LeetCode</div>
+                <div class="profile-buttons">
+                    <button class="btn profile-button" data-url="https://leetcode.com/u/aditya2795/">View Profile</button>
+                </div>
+            </div>
+        </div>
+        <hr class="hr-custom">
+        <div class="profiles">
+            <div class="profile-logos">
+                <img src="images/Github-logo.png" alt="GitHub">
+            </div>
+            <div class="profile-info">
+                <div class="profile-title">GitHub</div>
+                <div class="profile-buttons">
+                    <button class="btn profile-button" data-url="https://github.com/ASPZON">View Profile</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            let menu = document.querySelector(".nav-right ul");
+            menu.classList.toggle("show");
+        }
+
+        // Redirect buttons to respective profile URLs
+        document.querySelectorAll(".profile-button").forEach(button => {
+            button.addEventListener("click", function() {
+                window.open(this.getAttribute("data-url"), "_blank");
+            });
+        });
+    </script>
+</body>
+</html>

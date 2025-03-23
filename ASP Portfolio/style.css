@@ -1,0 +1,562 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    overflow: hidden;
+    background-color: rgb(2, 2, 37);
+    color: white;
+    overflow: auto;
+}
+
+.nav-bar {
+    display: flex;
+    background-color: rgb(20, 20, 52);
+    justify-content: space-around;
+    align-items: center;
+    height: 5rem;
+    border-radius: 15px;
+    margin: 1rem 2rem;
+    position: relative;
+
+}
+
+
+.nav-left {
+    color: aliceblue;
+    font-size: 1.5rem;
+}
+
+.nav-right ul {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-right ul li {
+    list-style: none;
+    margin: 0 2rem;
+    
+}
+
+.nav-right ul li a {
+    text-decoration: none;
+    color: white;
+}
+.nav-right ul li a:hover {
+    font-size: 1.2rem;
+    transition: 0.1s;
+    text-shadow: #8f8d8d 3px 3px 2px 3px;
+}
+
+
+/* First Section starts from here */
+
+.first-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 8.12rem 0;
+    background-color: rgb(11, 11, 45);
+    border-radius: 2.5rem;
+    margin: 2rem;
+}
+
+.first-Section>div {
+    width: 30%;
+}
+
+.first-left {
+    font-size: 3rem;
+}
+.first-left .first-buttons {
+    padding: 3.12rem 0;
+}
+
+.first-left .btn {
+    padding: 0.75rem;
+    background: #1e2167;
+    color: white;
+    border: 2px solid white;
+    border-radius: 1rem;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 1rem;
+    border: none;
+}
+.first-left .btn:hover {
+    background-color: rgb(166, 100, 228);
+    color: white;
+}
+
+.first-right img {
+    width: 33.12rem;
+    margin: 3.12rem 0; 
+}
+
+.name {
+    color: rgb(166, 100, 228);
+    font-weight: 500;
+}
+
+#element {
+    color: rgb(166, 100, 228);
+}
+
+/* About section starts from here */
+
+.about {
+    justify-content: space-around;
+    align-items: center;
+    margin: 8.12rem 0;
+    background-color: rgb(11, 11, 45);
+    border-radius: 2.5rem;
+    margin: 2rem;
+}
+
+.about #h1 {
+    font-size: 2rem;
+    text-align: center;
+    padding: 3rem 3rem 0 3rem;
+}
+.about p {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0rem 0rem 0 0rem;
+    line-height: 3rem;
+    padding: 0rem 3rem 3rem 3rem;
+}
+
+/* footer starts from here */
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 8.12rem 0;
+    background-color: rgb(11, 11, 45);
+    border-radius: 2.5rem;
+    margin: 2rem;
+}
+
+.contact-details {
+    line-height: 2rem;
+    color: rgb(180, 179, 179);
+}
+#contact {
+    font-size: 2rem;
+    text-align: left;
+    color: rgb(255, 255, 255);
+}
+
+.other-links ul li a {
+    text-decoration: none;
+    color: rgb(210, 210, 210);
+}
+.other-links ul li {
+    list-style: none;
+}
+.other-links ul {
+    padding-left: 0px;
+    line-height: 2rem;
+}
+.other-links h5{
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 0;
+    color: rgb(255, 255, 255);
+}
+
+.viewer .btn {
+    padding: 0.5rem 1rem;
+    background: rgb(55, 95, 187);
+    color: white;
+    border: 2px solid white;
+    border-radius: 1rem;
+    font-size: 10px;
+    font-weight: 1000;
+    cursor: pointer;
+    margin-top: 1rem;
+    border: none;
+}
+.viewer .btn:hover {
+    background-color: rgb(120, 182, 26);
+    color: white;
+}
+
+.viewer p{
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 2rem;
+    padding: 0rem 3rem 0rem 3rem;
+}
+.text-box {
+    
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+/* For project list web page */
+
+
+.project {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 8.12rem 0;
+    background-color: rgb(11, 11, 45);
+    border-radius: 2.5rem;
+    margin: 2rem;
+}
+.project img {
+    width: 13rem;
+    margin: 3.12rem 0; 
+}
+
+.project-info {
+    line-height: 2rem;
+}
+.project-info .project-title {
+    font-size: 2rem;
+    text-align: center;
+    padding: 3rem 3rem 0 3rem;
+}
+.project-info .project-description {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0rem 3rem 3rem 3rem;
+}
+.project-info .project-buttons .btn{
+    padding: 1rem 2.5rem;
+    background: rgb(25, 54, 122);
+    color: white;
+    border: 2px solid white;
+    border-radius: 2rem;
+    font-size: 20px;
+    font-weight: 200;
+    cursor: pointer;
+    margin-top: 1rem;
+    border: none;
+    margin-right: 4rem;
+}
+.project-info .project-buttons .btn:hover {
+    background-color: rgb(237, 93, 93);
+    color: white;
+}
+
+.project-info .project-buttons {
+    padding: 1rem 0rem 3rem 3rem;
+    display: flex;
+}
+
+
+/* platforms page start from here */
+
+.profiles {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 8.12rem 0;
+    background-color: rgb(11, 11, 45);
+    border-radius: 2.5rem;
+    margin: 2rem;
+}
+
+.profiles img {
+    width: 13rem;
+    margin: 3.12rem 0; 
+}
+.profile-info {
+    line-height: 2rem;
+}
+
+.profile-info .profile-title {
+    font-size: 2rem;
+    text-align: center;
+    padding: 3rem 3rem 0 3rem;
+}
+
+.profile-info .profile-buttons .btn{
+    padding: 1rem 2.5rem;
+    background: rgb(25, 54, 122);
+    color: white;
+    border: 2px solid white;
+    border-radius: 2rem;
+    font-size: 20px;
+    font-weight: 200;
+    cursor: pointer;
+    margin-top: 1rem;
+    border: none;
+    margin-right: 4rem;
+    margin-left: 4rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* hr tag design */
+.hr-custom {
+    overflow: visible; /* For IE */
+    height: 30px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+}
+.hr-custom:before { /* Not really supposed to work, but does */
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+}
+
+.hr-end {
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+}
+
+
+
+
+
+
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    margin-right: 0;
+}
+
+
+
+
+/* @media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-left {
+        width: 80%;
+        text-align: center;
+    }
+
+    .nav-right ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 5rem;
+        right: 0;
+        background-color: rgb(20, 20, 52);
+        width: 100%;
+        text-align: center;
+        padding: 1rem 0;
+        
+        transform: translateY(-20px);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .nav-right ul.show {
+        display: flex;
+
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+        padding: 1rem 0;
+    }
+
+    .nav-right ul li {
+        margin: 1rem 0;
+    }
+
+} */
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-left {
+        width: 80%;
+        text-align: center;
+    }
+
+    .nav-right ul {
+        /* Remove display: none; */
+        max-height: 0;
+        overflow: hidden;
+
+        flex-direction: column;
+        position: absolute;
+        top: 5rem;
+        right: 0;
+        background-color: rgb(20, 20, 52);
+        width: 100%;
+        text-align: center;
+        padding: 0;
+
+        transform: translateY(-20px);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s ease-in-out;
+    }
+
+    /* When menu is shown */
+    .nav-right ul.show {
+        max-height: 300px; /* Adjust height */
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+        padding: 1rem 0;
+        margin-top: 0; 
+        border-radius: 15px;
+    }
+
+    .nav-right ul li {
+        margin: 1rem 0;
+    }
+
+
+
+
+    .first-section {
+        flex-direction: column;
+        margin: 2rem 1rem;
+    }
+    .first-left {
+        font-size: 1.7rem;
+        line-height: 3rem;
+    }
+
+    .first-section .first-right img {
+        width: 90%;
+    }
+
+    .first-section>div {
+        /* width: 100%; */
+        text-align: center;
+    }
+
+    .about {
+        flex-direction: column;
+        margin: 2rem 1rem;
+    }
+    .about p{
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+    }
+
+    .row {
+        flex-direction: column;
+        margin: 2rem 1rem;
+    }
+
+    .viewer .btn {
+        justify-content: center;
+        margin-left: 2rem;
+        margin-bottom: 2rem;
+        font-size: 0.7rem;
+        padding: 1rem 3rem;
+    }
+    .viewer form label{
+        margin-left: 2rem;
+    }
+    .text-box {
+
+        width: 85%;
+        margin: 1rem 2rem;
+    
+        border-radius: 1rem;
+        box-sizing: border-box; 
+    }
+
+
+
+
+    .project {
+        flex-direction: column;
+        margin: 2rem 1rem 1rem 2rem;
+    }
+
+    .project-info .project-buttons {
+        flex-direction: column;
+    }
+    
+
+    .project-info .project-buttons .btn{
+        flex-direction: column;
+        padding: 1rem 2.5rem;
+        background: rgb(25, 54, 122);
+        color: white;
+        border: 2px solid white;
+        border-radius: 2rem;
+        font-size: 20px;
+        font-weight: 200;
+        cursor: pointer;
+        margin-top: 1rem;
+        border: none;
+        margin-right: 4rem;
+    }
+
+    .profiles {
+        flex-direction: column;
+        margin: 2rem 1rem 1rem 2rem;
+    }
+
+    .profile-info .profile-buttons {
+        flex-direction: column;
+    }
+
+    .profile-title {
+        font-size: 1.7rem;
+    }
+
+    .profiles img {
+        margin-bottom: 1rem;
+    }
+
+    .profile-info .profile-buttons .btn{
+        flex-direction: column;
+        padding: 1rem 2.5rem;
+        background: rgb(25, 54, 122);
+        color: white;
+        border: 2px solid white;
+        border-radius: 2rem;
+        font-size: 20px;
+        font-weight: 200;
+        cursor: pointer;
+        margin-top: 1rem;
+        border: none;
+        margin-right: 4rem;
+        margin-left: 4rem;
+        margin-bottom: 2rem;
+    }
+    
+
+
+
+}
+
