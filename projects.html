@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya's Projects</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="nav-bar" id="home">
+        <div class="nav-left">Aditya's Projects</div>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <div class="nav-right">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </div>
+    </div>
+    <hr class="hr-custom">
+    <div class="project-list">
+        <div class="project">
+            <div class="project-image">
+                <img src="images/lib-logo.png" alt="...">
+            </div>
+            <div class="project-info">
+                <div class="project-title">Library - Management</div><br>
+                <div class="project-description">Project is under development. <br> You will be able to see it soon...</div>
+                <div class="project-buttons" id="project-buttons">
+                    <button class="btn" id="lib-project">View Project</button>
+                    <button class="btn">View Code</button>
+                </div>
+            </div>
+        </div>
+        <hr class="hr-custom">
+        <div class="project">
+            <div class="project-image">
+                <img src="images/logo.png" alt="...">
+            </div>
+            <div class="project-info">
+                <div class="project-title">Project under development...</div>
+                <div class="project-description">This is a project description</div>
+                <div class="project-buttons" id="project-buttons">
+                    <button class="btn">View Project</button>
+                    <button class="btn">View Code</button>
+                </div>
+            </div>
+        </div>
+
+        <hr class="hr-custom">
+
+    </div>
+
+
+
+    <script>
+        function toggleMenu() {
+            let menu = document.querySelector(".nav-right ul");
+            menu.classList.toggle("show");
+        }
+    </script>
+
+    <script>
+        // JavaScript function to open the PDF file
+        function alertMessage() {
+            alert("This page is Under Development");
+        }
+    
+        // Add a click event listener to the button
+        document.getElementById('project-buttons').addEventListener('click', alertMessage);
+    </script>
+    <script>
+        // JavaScript function to open the PDF file
+        function openProject() {
+            window.open('https://aditya9327.github.io/Library-Management/', '_blank');
+        }
+    
+        // Add a click event listener to the button
+        document.getElementById('lib-project').addEventListener('click', openProject);
+    </script>
+</body>
+
+</html>
