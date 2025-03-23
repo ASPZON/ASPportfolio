@@ -59,6 +59,29 @@
 
     </div>
 
+    <!-- Floating Chatbot Button -->
+    <div id="chatbot-icon" onclick="toggleChat()">
+        💬 Any Questions
+    </div>
+
+    <!-- Chatbot Box (Initially Hidden) -->
+    <div id="chatbot-box">
+        <div id="chatbot-header">
+            <span>Ask Me Anything</span>
+            <button onclick="toggleChat()">✖</button>
+        </div>
+        <ul id="question-list">
+            <li onclick="showAnswer('projects')">How many projects have I done?</li>
+            <li onclick="showAnswer('languages')">How many languages do I speak?</li>
+            <li onclick="showAnswer('cgpa')">What is my CGPA?</li>
+            <li onclick="showAnswer('birthday')">When is my Birthday/Age?</li>
+            <li onclick="showAnswer('hobbies')">What are my Hobbies?</li>
+            <li onclick="showAnswer('dreamCompany')">What is my Dream Company?</li>
+            <li onclick="showAnswer('contact')">Can I ask questions to Aditya?</li>
+        </ul>
+        <div id="chatbot-response"></div>
+    </div>
+
     <hr class="hr-custom">
 
     <div class="footer">
@@ -134,6 +157,30 @@
             msg.pitch = 1; // Adjust pitch (0 to 2)
             speechSynthesis.speak(msg);
         }
+    </script>
+
+    <script>
+        const answers = {
+            "projects": "I have completed 2 projects, 2 are under development, and 2 are planned.",
+            "languages": "I speak only 3 languages: English, Hindi, and Marathi.",
+            "cgpa": "My current CGPA is 9.06.",
+            "birthday": "I was born on 24th November 2004, and currently, I am 20 years old.",
+            "hobbies": "My hobbies include:<br>✔️ Listening to music<br>✔️ Traveling<br>✔️ Exploring new technologies.",
+            "dreamCompany": "You will know when I join it in the future 😉.",
+            "contact": "Yes, if you want answers from Aditya, send him a message through the message section below."
+        };
+
+        function showAnswer(questionKey) {
+            const responseDiv = document.getElementById("chatbot-response");
+            responseDiv.innerHTML = `<p>${answers[questionKey]}</p>`;
+        }
+
+        // Toggle Chatbot Visibility
+        function toggleChat() {
+            const chatbotBox = document.getElementById("chatbot-box");
+            chatbotBox.style.display = (chatbotBox.style.display === "block") ? "none" : "block";
+        }
+
     </script>
     
 </body>
